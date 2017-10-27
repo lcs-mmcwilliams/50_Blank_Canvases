@@ -22,7 +22,35 @@ let canvas = Canvas(width: 400, height: 300)
  
  Use whitespace and comments as appropriate.
  */
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
+
+
+for x in stride(from: 0, through: 1000, by: 100) {
+    if x % 200 == 0 {
+        canvas.fillColor = Color.purple
+    } else {
+        canvas.fillColor = Color.red
+        
+    }
+    canvas.drawRectangle(bottomLeftX: x, bottomLeftY: 0, width: 100, height: 1000)
+    
+}
+
+
+
+for x in stride (from: 0, through: 1000, by: 100) {
+    if x % 200 == 0 {
+        canvas.fillColor = Color.init(hue: 50, saturation: 100, brightness: 30, alpha: 50)
+    } else {
+        canvas.fillColor = Color.blue
+   
+    }
+    canvas.drawRectangle(bottomLeftX: x + 50, bottomLeftY: 0, width: 100, height: 1000)
+    
+}
+
+    
+
+
 
 
 
@@ -46,5 +74,7 @@ let canvas = Canvas(width: 400, height: 300)
  */
 // Don't remove the code below
 PlaygroundPage.current.liveView = canvas.imageView
+
+
 
 
