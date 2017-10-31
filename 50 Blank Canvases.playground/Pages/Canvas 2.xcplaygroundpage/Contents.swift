@@ -13,7 +13,7 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
+let canvas = Canvas(width: 800, height: 600)
 
 /*:
  ## Add your code below
@@ -22,7 +22,38 @@ let canvas = Canvas(width: 400, height: 300)
  
  Use whitespace and comments as appropriate.
  */
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
+// Move origin to the middle of the canvasand
+
+canvas.translate(byX: 400, byY: 300)
+
+//Kill Boarders
+canvas.drawShapesWithBorders = false
+
+//draw axis
+canvas.drawAxes()
+
+//Pumpkin
+canvas.fillColor = Color.orange
+canvas.drawEllipse(centreX: 0, centreY: 0, width: 300, height: 275, borderWidth: 5)
+canvas.drawEllipse(centreX: 0, centreY: 0, width: 200, height: 250, borderWidth: 5)
+
+//pumkin crease
+canvas.fillColor = Color.init(hue: 25, saturation: 100, brightness: 1, alpha: 10)
+canvas.drawEllipse(centreX: 0, centreY: 0, width: 250, height: 225, borderWidth: 10)
+canvas.fillColor = Color.orange
+canvas.drawEllipse(centreX: 0, centreY: 0, width: 200, height: 225, borderWidth: 10)
+canvas.fillColor = Color.init(hue: 25, saturation: 100, brightness: 1, alpha: 10)
+canvas.drawEllipse(centreX: 0, centreY: 0, width: 150, height: 225, borderWidth: 10)
+canvas.fillColor = Color.orange
+canvas.drawEllipse(centreX: 0, centreY: 0, width: 100, height: 225, borderWidth: 10)
+canvas.fillColor = Color.init(hue: 25, saturation: 100, brightness: 1, alpha: 10)
+canvas.drawEllipse(centreX: 0, centreY: 0, width: 50, height: 225, borderWidth: 10)
+
+//greenstem
+canvas.fillColor = Color.green
+
+
+
 
 
 
