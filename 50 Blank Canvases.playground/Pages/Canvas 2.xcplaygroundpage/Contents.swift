@@ -29,14 +29,19 @@ canvas.translate(byX: 400, byY: 300)
 //Kill Boarders
 canvas.drawShapesWithBorders = false
 
+//Background
+canvas.fillColor = Color.init(hue: 360, saturation: 100, brightness: 22, alpha: 100)
+canvas.drawRectangle(bottomLeftX: -400, bottomLeftY: -400, width: 1400, height: 12000)
+
+
 //draw axis
 canvas.drawAxes()
 
-//greenstem
 
+//greenstem
 canvas.fillColor = Color.init(hue: 109, saturation: 100, brightness: 22, alpha: 100)
 canvas.drawEllipse(centreX: -20, centreY: 130, width: 50, height: 90, borderWidth: 0)
-canvas.fillColor = Color.white
+canvas.fillColor = Color.init(hue: 360, saturation: 100, brightness: 22, alpha: 100)
 canvas.drawEllipse(centreX: -40, centreY: 110, width: 50, height: 90, borderWidth: 0)
 
 
@@ -57,6 +62,24 @@ canvas.fillColor = Color.orange
 canvas.drawEllipse(centreX: 0, centreY: 0, width: 100, height: 225, borderWidth: 10)
 canvas.fillColor = Color.init(hue: 25, saturation: 100, brightness: 1, alpha: 10)
 canvas.drawEllipse(centreX: 0, centreY: 0, width: 50, height: 225, borderWidth: 10)
+
+
+//Jack 'o' lantern eyes
+canvas.fillColor = Color.black
+var leftEye : [NSPoint] = []
+leftEye.append(NSPoint(x: -100, y: 15))
+leftEye.append(NSPoint(x: -50, y: 15))
+leftEye.append(NSPoint(x: -75, y: 40))
+leftEye.append(NSPoint(x: -100, y: 15))
+canvas.drawCustomShape(with: leftEye)
+
+var rightEye : [NSPoint] = []
+rightEye.append(NSPoint(x: 100, y: 15))
+rightEye.append(NSPoint(x: 50, y: 15))
+rightEye.append(NSPoint(x: 75, y: 40))
+rightEye.append(NSPoint(x: 100, y: 15))
+canvas.drawCustomShape(with: rightEye)
+
 
 
 
