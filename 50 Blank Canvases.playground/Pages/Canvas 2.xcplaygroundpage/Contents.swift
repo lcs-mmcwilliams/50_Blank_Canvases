@@ -67,20 +67,25 @@ canvas.drawEllipse(centreX: 0, centreY: 0, width: 50, height: 225, borderWidth: 
 //Jack 'o' lantern eyes
 canvas.fillColor = Color.black
 var leftEye : [NSPoint] = []
-leftEye.append(NSPoint(x: -100, y: 15))
-leftEye.append(NSPoint(x: -50, y: 15))
-leftEye.append(NSPoint(x: -75, y: 40))
-leftEye.append(NSPoint(x: -100, y: 15))
+leftEye.append(NSPoint(x: -75, y: 15))
+leftEye.append(NSPoint(x: -25, y: 15))
+leftEye.append(NSPoint(x: -50, y: 40))
+leftEye.append(NSPoint(x: -75, y: 15))
 canvas.drawCustomShape(with: leftEye)
 
 var rightEye : [NSPoint] = []
-rightEye.append(NSPoint(x: 100, y: 15))
-rightEye.append(NSPoint(x: 50, y: 15))
-rightEye.append(NSPoint(x: 75, y: 40))
-rightEye.append(NSPoint(x: 100, y: 15))
+rightEye.append(NSPoint(x: 75, y: 15))
+rightEye.append(NSPoint(x: 25, y: 15))
+rightEye.append(NSPoint(x: 50, y: 40))
+rightEye.append(NSPoint(x: 75, y: 15))
 canvas.drawCustomShape(with: rightEye)
 
-
+var nose : [NSPoint] = []
+nose.append(NSPoint(x: 0, y: 0))
+nose.append(NSPoint(x: -25, y: -15))
+nose.append(NSPoint(x: 25, y: -15))
+nose.append(NSPoint(x: 0, y: 0))
+canvas.drawCustomShape(with: nose)
 
 
 
