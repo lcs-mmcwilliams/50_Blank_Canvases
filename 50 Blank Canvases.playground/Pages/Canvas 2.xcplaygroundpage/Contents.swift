@@ -32,10 +32,19 @@ canvas.drawShapesWithBorders = false
 //draw axis
 canvas.drawAxes()
 
+//greenstem
+
+canvas.fillColor = Color.init(hue: 109, saturation: 100, brightness: 22, alpha: 100)
+canvas.drawEllipse(centreX: -20, centreY: 130, width: 50, height: 90, borderWidth: 0)
+canvas.fillColor = Color.white
+canvas.drawEllipse(centreX: -40, centreY: 110, width: 50, height: 90, borderWidth: 0)
+
+
 //Pumpkin
 canvas.fillColor = Color.orange
 canvas.drawEllipse(centreX: 0, centreY: 0, width: 300, height: 275, borderWidth: 5)
 canvas.drawEllipse(centreX: 0, centreY: 0, width: 200, height: 250, borderWidth: 5)
+
 
 //pumkin crease
 canvas.fillColor = Color.init(hue: 25, saturation: 100, brightness: 1, alpha: 10)
@@ -49,8 +58,6 @@ canvas.drawEllipse(centreX: 0, centreY: 0, width: 100, height: 225, borderWidth:
 canvas.fillColor = Color.init(hue: 25, saturation: 100, brightness: 1, alpha: 10)
 canvas.drawEllipse(centreX: 0, centreY: 0, width: 50, height: 225, borderWidth: 10)
 
-//greenstem
-canvas.fillColor = Color.green
 
 
 
