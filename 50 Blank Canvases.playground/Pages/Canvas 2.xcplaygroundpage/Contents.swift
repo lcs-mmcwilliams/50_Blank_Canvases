@@ -87,7 +87,15 @@ nose.append(NSPoint(x: 25, y: -15))
 nose.append(NSPoint(x: 0, y: 0))
 canvas.drawCustomShape(with: nose)
 
-
+//var mouthGrin : [NSPoint] = []
+//mouthGrin.append(NSPoint(x: -45, y: -100))
+//mouthGrin.append(NSPoint(x: -30, y: ))
+//mouthGrin.append(NSPoint(x: 30, y: 80))//
+//mouthGrin.append(NSPoint(x: 20, y: 60))
+//mouthGrin.append(NSPoint(x: -20, y: 60))
+//mouthGrin.append(NSPoint(x: -30, y: 80))//
+//mouthGrin.append(NSPoint(x: -40, y: 40))
+//canvas.drawCustomShape(with: mouthGrin
 
 
 
