@@ -34,8 +34,6 @@ canvas.fillColor = Color.init(hue: 360, saturation: 100, brightness: 22, alpha: 
 canvas.drawRectangle(bottomLeftX: -400, bottomLeftY: -400, width: 1400, height: 12000)
 
 
-//draw axis
-canvas.drawAxes()
 
 
 //greenstem
@@ -87,15 +85,15 @@ nose.append(NSPoint(x: 25, y: -15))
 nose.append(NSPoint(x: 0, y: 0))
 canvas.drawCustomShape(with: nose)
 
-//var mouthGrin : [NSPoint] = []
-//mouthGrin.append(NSPoint(x: -45, y: -100))
-//mouthGrin.append(NSPoint(x: -30, y: ))
-//mouthGrin.append(NSPoint(x: 30, y: 80))//
-//mouthGrin.append(NSPoint(x: 20, y: 60))
-//mouthGrin.append(NSPoint(x: -20, y: 60))
-//mouthGrin.append(NSPoint(x: -30, y: 80))//
-//mouthGrin.append(NSPoint(x: -40, y: 40))
-//canvas.drawCustomShape(with: mouthGrin
+var mouthGrin : [NSPoint] = []
+mouthGrin.append(NSPoint(x: 35, y: -50))
+mouthGrin.append(NSPoint(x: 50, y:-40 ))
+mouthGrin.append(NSPoint(x: 45, y: -60))
+mouthGrin.append(NSPoint(x: -45, y: -60))
+mouthGrin.append(NSPoint(x: -50, y: -40))
+mouthGrin.append(NSPoint(x: -35, y: -50))
+mouthGrin.append(NSPoint(x: 35, y: -50))
+canvas.drawCustomShape(with: mouthGrin)
 
 
 
