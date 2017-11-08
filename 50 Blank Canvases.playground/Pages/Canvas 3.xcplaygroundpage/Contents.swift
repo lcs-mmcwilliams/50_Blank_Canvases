@@ -33,7 +33,7 @@ canvas.drawRectangle(bottomLeftX: 0, bottomLeftY: 0, width: 600, height: 500)
 
 // red christmas lines
 canvas.drawShapesWithBorders = true
-canvas.lineColor = Color.red
+canvas.lineColor = Color.white
 canvas.defaultLineWidth = 10
 
 for x in stride(from: 0, through: 600, by: 50) {
@@ -45,19 +45,28 @@ for y in stride(from: 0, through: 500, by: 50) {
 }
 
 //white lines
-canvas.lineColor = Color.white
+canvas.lineColor = Color.red
 canvas.defaultLineWidth = 7
 
-for x in stride(from: 25, through: 550, by: 50) {
-    canvas.drawLine(fromX: 0, fromY: 0, toX: x, toY: 550)
+for x in stride(from: 25, through: 600, by: 50) {
+    canvas.drawLine(fromX: 0, fromY: 0, toX: x, toY: 500)
+}
+
+for y in stride(from: 25, through: 500, by: 50) {
+    canvas.drawLine(fromX: 0, fromY: 0, toX: 600, toY: y)
 }
 
 
+//text rectangle
+canvas.fillColor = Color.white
+canvas.defaultBorderWidth = 10
+canvas.borderColor = Color.init(hue: 49, saturation: 96, brightness: 45, alpha: 100)
+canvas.drawRoundedRectangle(centreX: 300, centreY: 390, width: 550, height: 100)
 
 
 //text "Merry Christmas
-//canvas.textColor = Color.blue
-//canvas.drawText(message: "Merry Christmas", size: 70, x: 40, y: 350)
+canvas.textColor = Color.init(hue: 49, saturation: 96, brightness: 45, alpha: 100)
+canvas.drawText(message: "Merry Christmas", size: 70, x: 40, y: 350)
 
 
 
