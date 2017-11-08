@@ -13,7 +13,7 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
+let canvas = Canvas(width: 600, height: 500)
 
 /*:
  ## Add your code below
@@ -23,6 +23,64 @@ let canvas = Canvas(width: 400, height: 300)
  Use whitespace and comments as appropriate.
  */
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
+
+
+//CODE STARTS
+//background
+canvas.fillColor = Color.init(hue: 163, saturation: 96, brightness: 21, alpha: 100)
+canvas.drawShapesWithBorders = false
+canvas.drawRectangle(bottomLeftX: 0, bottomLeftY: 0, width: 600, height: 500)
+
+// red christmas lines
+canvas.drawShapesWithBorders = true
+canvas.lineColor = Color.red
+canvas.defaultLineWidth = 10
+
+for x in stride(from: 0, through: 600, by: 50) {
+    canvas.drawLine(fromX: 0, fromY: 0, toX: x, toY: 500)
+}
+
+for y in stride(from: 0, through: 500, by: 50) {
+    canvas.drawLine(fromX: 0, fromY: 0, toX: 600, toY: y)
+}
+
+//white lines
+canvas.lineColor = Color.white
+canvas.defaultLineWidth = 7
+
+for x in stride(from: 25, through: 550, by: 50) {
+    canvas.drawLine(fromX: 0, fromY: 0, toX: x, toY: 550)
+}
+
+
+
+
+//text "Merry Christmas
+//canvas.textColor = Color.blue
+//canvas.drawText(message: "Merry Christmas", size: 70, x: 40, y: 350)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//CODE END
 
 
 
