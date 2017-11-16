@@ -70,7 +70,8 @@ canvas.drawText(message: "Merry Christmas", size: 70, x: 40, y: 350)
 
 
 
-
+// copy to clipboard
+canvas.copyToClipboard()
 
 
 
